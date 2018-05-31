@@ -63,6 +63,7 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(173, 35);
             this.nameTextBox.TabIndex = 2;
+            this.nameTextBox.Enter += new System.EventHandler(this.acceptButton_Click);
             // 
             // NameForm
             // 

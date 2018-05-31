@@ -26,18 +26,11 @@ namespace Tic_Tac_Toe
         #region Form events
         private void acceptButton_Click(object sender, EventArgs e)
         {
-            if (SetPlayerName == "")
-            {
-                SetPlayerName = "Player";
-            }
-
-            SetPlayerName = nameTextBox.Text;
+            SetPlayerName = SetPlayerName == null ? "Player" : nameTextBox.Text;
 
             var mainForm = new MainForm();
 
             mainForm.Show();
-
-            nameTextBox.Clear();
 
             this.Visible = false;
         }

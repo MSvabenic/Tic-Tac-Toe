@@ -89,7 +89,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Slike\stock-photo-146960667-1-1500x990.jpg" />
+    <None Include="Pictures\stock-photo-146960667-1-1500x990.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
