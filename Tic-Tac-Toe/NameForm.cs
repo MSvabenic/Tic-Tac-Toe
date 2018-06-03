@@ -26,7 +26,7 @@ namespace Tic_Tac_Toe
         #region Form events
         private void acceptButton_Click(object sender, EventArgs e)
         {
-            SetPlayerName = SetPlayerName == null ? "Player" : nameTextBox.Text;
+            SetPlayerName = nameTextBox.Text == "" ? "Player" : nameTextBox.Text;
 
             var mainForm = new MainForm();
 

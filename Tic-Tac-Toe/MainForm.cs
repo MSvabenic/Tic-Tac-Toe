@@ -16,6 +16,7 @@ namespace Tic_Tac_Toe
         private readonly List<Button> ButtonList = new List<Button>();
         private int playerScore = 0;
         private int aIScore = 0;
+        private int draw = 0;
         private bool playerWin;
         private bool aIWin;
         Random random = new Random();
@@ -41,7 +42,7 @@ namespace Tic_Tac_Toe
                 button.Text = "X";
                 button.Enabled = false;
                 ButtonList.Remove(button);
-                aIMove(sender, e);
+                aIMove();
                 checkWin();
             }
             catch (InvalidCastException ex)
@@ -57,7 +58,7 @@ namespace Tic_Tac_Toe
         #endregion
 
         #region Methods
-        private void aIMove(object sender, EventArgs e)
+        private void aIMove()
         {
             if (aIBlock() == null)
             {
@@ -83,16 +84,19 @@ namespace Tic_Tac_Toe
             if ((button1.Text == "") && (button2.Text == "X") && (button3.Text == "X"))
             {
                 button1.Enabled = false;
+                ButtonList.Remove(button1);
                 return button1.Text = "O";
             }
             if ((button1.Text == "X") && (button2.Text == "") && (button3.Text == "X"))
             {
                 button2.Enabled = false;
+                ButtonList.Remove(button2);
                 return button2.Text = "O";
             }
             if ((button1.Text == "X") && (button2.Text == "X") && (button3.Text == ""))
             {
                 button3.Enabled = false;
+                ButtonList.Remove(button3);
                 return button3.Text = "O";
             }
 
@@ -100,16 +104,19 @@ namespace Tic_Tac_Toe
             if ((button4.Text == "") && (button5.Text == "X") && (button6.Text == "X"))
             {
                 button4.Enabled = false;
+                ButtonList.Remove(button4);
                 return button4.Text = "O";
             }
             if ((button4.Text == "X") && (button5.Text == "") && (button6.Text == "X"))
             {
                 button5.Enabled = false;
+                ButtonList.Remove(button5);
                 return button5.Text = "O";
             }
             if ((button4.Text == "X") && (button5.Text == "X") && (button6.Text == ""))
             {
                 button6.Enabled = false;
+                ButtonList.Remove(button6);
                 return button6.Text = "O";
             }
 
@@ -117,17 +124,20 @@ namespace Tic_Tac_Toe
             if ((button7.Text == "") && (button8.Text == "X") && (button9.Text == "X"))
             {
                 button7.Enabled = false;
+                ButtonList.Remove(button7);
                 return button7.Text = "O";
             }
-            if ((button7.Text == "X") && (button8.Text == "") && (button8.Text == "X"))
+            if ((button7.Text == "X") && (button8.Text == "") && (button9.Text == "X"))
             {
                 button8.Enabled = false;
+                ButtonList.Remove(button8);
                 return button8.Text = "O";
             }
 
-            if ((button7.Text == "X") && (button8.Text == "X") && (button8.Text == ""))
+            if ((button7.Text == "X") && (button8.Text == "X") && (button9.Text == ""))
             {
                 button9.Enabled = false;
+                ButtonList.Remove(button9);
                 return button9.Text = "O";
             }
             #endregion
@@ -137,16 +147,19 @@ namespace Tic_Tac_Toe
             if ((button1.Text == "") && (button4.Text == "X") && (button7.Text == "X"))
             {
                 button1.Enabled = false;
+                ButtonList.Remove(button1);
                 return button1.Text = "O";
             }
             if ((button1.Text == "X") && (button4.Text == "") && (button7.Text == "X"))
             {
                 button4.Enabled = false;
+                ButtonList.Remove(button4);
                 return button4.Text = "O";
             }
             if ((button1.Text == "X") && (button4.Text == "X") && (button7.Text == ""))
             {
                 button7.Enabled = false;
+                ButtonList.Remove(button7);
                 return button7.Text = "O";
             }
 
@@ -154,16 +167,19 @@ namespace Tic_Tac_Toe
             if ((button2.Text == "") && (button5.Text == "X") && (button8.Text == "X"))
             {
                 button2.Enabled = false;
+                ButtonList.Remove(button2);
                 return button2.Text = "O";
             }
             if ((button2.Text == "X") && (button5.Text == "") && (button8.Text == "X"))
             {
                 button5.Enabled = false;
+                ButtonList.Remove(button5);
                 return button5.Text = "O";
             }
             if ((button2.Text == "X") && (button5.Text == "X") && (button8.Text == ""))
             {
                 button8.Enabled = false;
+                ButtonList.Remove(button8);
                 return button8.Text = "O";
             }
 
@@ -171,16 +187,19 @@ namespace Tic_Tac_Toe
             if ((button3.Text == "") && (button6.Text == "X") && (button9.Text == "X"))
             {
                 button3.Enabled = false;
+                ButtonList.Remove(button3);
                 return button3.Text = "O";
             }
             if ((button3.Text == "X") && (button6.Text == "") && (button9.Text == "X"))
             {
                 button6.Enabled = false;
+                ButtonList.Remove(button6);
                 return button6.Text = "O";
             }
             if ((button3.Text == "X") && (button6.Text == "X") && (button9.Text == ""))
             {
                 button9.Enabled = false;
+                ButtonList.Remove(button9);
                 return button9.Text = "O";
             }
             #endregion
@@ -190,16 +209,19 @@ namespace Tic_Tac_Toe
             if ((button1.Text == "") && (button5.Text == "X") && (button9.Text == "X"))
             {
                 button1.Enabled = false;
+                ButtonList.Remove(button1);
                 return button1.Text = "O";
             }
             if ((button1.Text == "X") && (button5.Text == "") && (button9.Text == "X"))
             {
                 button5.Enabled = false;
+                ButtonList.Remove(button5);
                 return button5.Text = "O";
             }
             if ((button1.Text == "X") && (button5.Text == "X") && (button9.Text == ""))
             {
                 button9.Enabled = false;
+                ButtonList.Remove(button9);
                 return button9.Text = "O";
             }
 
@@ -207,16 +229,19 @@ namespace Tic_Tac_Toe
             if ((button3.Text == "") && (button5.Text == "X") && (button7.Text == "X"))
             {
                 button3.Enabled = false;
+                ButtonList.Remove(button3);
                 return button3.Text = "O";
             }
             if ((button3.Text == "X") && (button5.Text == "") && (button7.Text == "X"))
             {
                 button5.Enabled = false;
+                ButtonList.Remove(button5);
                 return button5.Text = "O";
             }
             if ((button3.Text == "X") && (button5.Text == "X") && (button7.Text == ""))
             {
                 button7.Enabled = false;
+                ButtonList.Remove(button7);
                 return button7.Text = "O";
             }
             #endregion
@@ -226,6 +251,7 @@ namespace Tic_Tac_Toe
 
         private void checkWin()
         {
+            #region Check player win
             if (button1.Text == "X" && button2.Text == "X" && button3.Text == "X"
                 || button4.Text == "X" && button5.Text == "X" && button6.Text == "X"
                 || button7.Text == "X" && button8.Text == "X" && button9.Text == "X"
@@ -242,15 +268,17 @@ namespace Tic_Tac_Toe
                 playerWin = true;
                 playAgain();
             }
+            #endregion
 
+            #region Check AI win
             if (button1.Text == "O" && button2.Text == "O" && button3.Text == "O"
-                     || button4.Text == "O" && button5.Text == "O" && button6.Text == "O"
-                     || button7.Text == "O" && button8.Text == "O" && button9.Text == "O"
-                     || button1.Text == "O" && button4.Text == "O" && button7.Text == "O"
-                     || button2.Text == "O" && button5.Text == "O" && button8.Text == "O"
-                     || button3.Text == "O" && button6.Text == "O" && button9.Text == "O"
-                     || button1.Text == "O" && button5.Text == "O" && button9.Text == "O"
-                     || button3.Text == "O" && button5.Text == "O" && button7.Text == "O")
+                || button4.Text == "O" && button5.Text == "O" && button6.Text == "O"
+                || button7.Text == "O" && button8.Text == "O" && button9.Text == "O"
+                || button1.Text == "O" && button4.Text == "O" && button7.Text == "O"
+                || button2.Text == "O" && button5.Text == "O" && button8.Text == "O"
+                || button3.Text == "O" && button6.Text == "O" && button9.Text == "O"
+                || button1.Text == "O" && button5.Text == "O" && button9.Text == "O"
+                || button3.Text == "O" && button5.Text == "O" && button7.Text == "O")
             {
                 aIScore++;
                 aIResult.Text = aIScore.ToString();
@@ -259,6 +287,21 @@ namespace Tic_Tac_Toe
                 aIWin = true;
                 playAgain();
             }
+            #endregion
+
+            #region Result is draw
+            playerWin = false;
+            aIWin = false;
+            if (ButtonList.Count == 0 && !aIWin && !playerWin)
+            {
+                MessageBox.Show("Draw!");
+                draw++;
+                playerResult.Text = playerScore.ToString();
+                aIResult.Text = aIScore.ToString();
+                drawResultLabel.Text = draw.ToString();
+                playAgain();
+            }
+            #endregion
         }
 
         private void playAgain()
@@ -277,6 +320,7 @@ namespace Tic_Tac_Toe
 
         private void fillButtonList(List<Button> list)
         {
+            list.Clear();
             list.Add(button1);
             list.Add(button2);
             list.Add(button3);

@@ -41,6 +41,8 @@
             this.aILabel = new System.Windows.Forms.Label();
             this.playerResult = new System.Windows.Forms.Label();
             this.aIResult = new System.Windows.Forms.Label();
+            this.drawLabel = new System.Windows.Forms.Label();
+            this.drawResultLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -188,6 +190,29 @@
             this.aIResult.Size = new System.Drawing.Size(0, 38);
             this.aIResult.TabIndex = 12;
             // 
+            // drawLabel
+            // 
+            this.drawLabel.AutoSize = true;
+            this.drawLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.drawLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.drawLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.drawLabel.Location = new System.Drawing.Point(329, 9);
+            this.drawLabel.Name = "drawLabel";
+            this.drawLabel.Size = new System.Drawing.Size(94, 38);
+            this.drawLabel.TabIndex = 13;
+            this.drawLabel.Text = "Draw";
+            // 
+            // drawResultLabel
+            // 
+            this.drawResultLabel.AutoSize = true;
+            this.drawResultLabel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.drawResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.drawResultLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.drawResultLabel.Location = new System.Drawing.Point(375, 78);
+            this.drawResultLabel.Name = "drawResultLabel";
+            this.drawResultLabel.Size = new System.Drawing.Size(0, 38);
+            this.drawResultLabel.TabIndex = 14;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -197,6 +222,8 @@
             this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.stock_photo_146960667_1_1500x990;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(736, 783);
+            this.Controls.Add(this.drawResultLabel);
+            this.Controls.Add(this.drawLabel);
             this.Controls.Add(this.aIResult);
             this.Controls.Add(this.playerResult);
             this.Controls.Add(this.aILabel);
@@ -238,6 +265,8 @@
         private System.Windows.Forms.Label aILabel;
         private System.Windows.Forms.Label playerResult;
         private System.Windows.Forms.Label aIResult;
+        private System.Windows.Forms.Label drawLabel;
+        private System.Windows.Forms.Label drawResultLabel;
     }
 }
 
