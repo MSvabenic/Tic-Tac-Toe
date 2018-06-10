@@ -29,7 +29,7 @@ namespace Tic_Tac_Toe
 
             playerLabel.Text = NameForm.SetPlayerName;
 
-            playAgain();
+            fillButtonList(ButtonList);
         }
         #endregion
 
@@ -247,7 +247,7 @@ namespace Tic_Tac_Toe
             #endregion
 
             return null;
-        }
+        } 
 
         private void checkWin()
         {
@@ -264,6 +264,7 @@ namespace Tic_Tac_Toe
                 playerScore++;
                 playerResult.Text = playerScore.ToString();
                 aIResult.Text = aIScore.ToString();
+                drawResultLabel.Text = draw.ToString();
                 MessageBox.Show(NameForm.SetPlayerName + " wins! ");
                 playerWin = true;
                 playAgain();
@@ -283,6 +284,7 @@ namespace Tic_Tac_Toe
                 aIScore++;
                 aIResult.Text = aIScore.ToString();
                 playerResult.Text = playerScore.ToString();
+                drawResultLabel.Text = draw.ToString();
                 MessageBox.Show("AI wins!");
                 aIWin = true;
                 playAgain();

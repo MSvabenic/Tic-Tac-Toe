@@ -176,8 +176,9 @@
             this.playerResult.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.playerResult.Location = new System.Drawing.Point(101, 80);
             this.playerResult.Name = "playerResult";
-            this.playerResult.Size = new System.Drawing.Size(0, 38);
+            this.playerResult.Size = new System.Drawing.Size(35, 38);
             this.playerResult.TabIndex = 11;
+            this.playerResult.Text = "0";
             // 
             // aIResult
             // 
@@ -187,8 +188,9 @@
             this.aIResult.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.aIResult.Location = new System.Drawing.Point(677, 80);
             this.aIResult.Name = "aIResult";
-            this.aIResult.Size = new System.Drawing.Size(0, 38);
+            this.aIResult.Size = new System.Drawing.Size(35, 38);
             this.aIResult.TabIndex = 12;
+            this.aIResult.Text = "0";
             // 
             // drawLabel
             // 
@@ -210,8 +212,9 @@
             this.drawResultLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.drawResultLabel.Location = new System.Drawing.Point(375, 78);
             this.drawResultLabel.Name = "drawResultLabel";
-            this.drawResultLabel.Size = new System.Drawing.Size(0, 38);
+            this.drawResultLabel.Size = new System.Drawing.Size(35, 38);
             this.drawResultLabel.TabIndex = 14;
+            this.drawResultLabel.Text = "0";
             // 
             // MainForm
             // 

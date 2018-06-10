@@ -1,0 +1,11 @@
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\bin\Release\Tic-Tac-Toe.exe.config
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\bin\Release\Tic-Tac-Toe.exe
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\bin\Release\Tic-Tac-Toe.pdb
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic-Tac-Toe.csprojAssemblyReference.cache
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic_Tac_Toe.MainForm.resources
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic_Tac_Toe.NameForm.resources
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic_Tac_Toe.Properties.Resources.resources
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic-Tac-Toe.csproj.GenerateResource.cache
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic-Tac-Toe.csproj.CoreCompileInputs.cache
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic-Tac-Toe.exe
+F:\Visual Studio Projects\Lokalno\Tic-Tac-Toe\Tic-Tac-Toe\obj\Release\Tic-Tac-Toe.pdb

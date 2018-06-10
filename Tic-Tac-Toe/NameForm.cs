@@ -39,6 +39,12 @@ namespace Tic_Tac_Toe
         {
             Application.Exit();
         }
+
+        private void nameTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                acceptButton_Click(sender,e);
+        }
         #endregion
     }
 }
